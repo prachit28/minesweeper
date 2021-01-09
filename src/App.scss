@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+  content: "";
+}
+
+.titleScreen {
+  h3 { text-align: center;}
+}
+.game {
+  padding: 20px;
+  
+  .hud {
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 7px;
+    text-align: center;
+
+    min-height: 100px;
+    border-radius: 7px;
+
+    .minesStatus {
+      display: block;
+      margin-top: 15px;
+    }
+
+    h1,p {
+      margin: 0;
+    }
+  }
+
+  .play-area {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sqaure {
+    background: #FCFAF9;
+    border: 1px solid black;
+    border-radius: 4px;
+    float: left;
+    line-height: 45px;
+    height: 45px;
+    text-align: center;
+    width: 45px;
+    cursor: pointer;
+    color: #333333;
+    font-weight: 600;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .unopened {
+    background: #333333;
+  }
+  
+  .flagged {
+    color: #fc543c;
+  }
+}
+
+input, button {
+  margin: 10px
+}
